@@ -1,0 +1,14 @@
+dialog[open] {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 32px;
+	gap: 32px;
+	border-radius: 10px;
+	background-color: hsl(27, 100%, 98%);
+}
+
+dialog::backdrop {
+	background-color: black;
+	opacity: 0.8;
+}
