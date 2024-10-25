@@ -29,8 +29,8 @@ function App() {
 	}, [cookies]);
 
 	const authURL = authType === "login"
-		? "http://localhost:3000/auth/login"
-		: "http://localhost:3000/auth/register";
+		? "https://todoassbackend-1.onrender.com/auth/login"
+		: "https://todoassbackend-1.onrender.com/auth/register";
 
 	const handleLogOut = () => {
 		removeCookies("user", { path: "/" });

@@ -12,7 +12,7 @@ export default function EditToDo() {
 	const todoId = useParams().todoid;
 	const loggeduser = useContext(UserContext);
 	const userToken = loggeduser ? loggeduser.token : undefined;
-	const getToDoUrl = `http://localhost:3000/todo/${todoId}`;
+	const getToDoUrl = `https://todoassbackend-1.onrender.com/todo/${todoId}`;
 
 	const [error, setError] = useState();
 	const [isLoading, setIsloading] = useState(false);

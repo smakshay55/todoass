@@ -9,7 +9,7 @@ export default function AddToDo() {
     });
     const loggeduser = useContext(UserContext);
     const userToken = loggeduser ? loggeduser.token : undefined;
-    const getToDoUrl = "http://localhost:3000/todo";
+    const getToDoUrl = "https://todoassbackend-1.onrender.com/todo";
     const [error, setError] = useState();
     const [isLoading, setIsloading] = useState(false);
 
